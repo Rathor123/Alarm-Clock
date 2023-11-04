@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    background-image: linear-gradient(#F5F7FA, #B8C6DB);
+}
+
+.clock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.time {
+    margin-top: 20px;
+    border: 1px dotted black;
+    box-shadow: 2px 5px 7px 10px gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gold;
+    width: 80%;
+    height: 20vh;
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.alarmcontainer {
+    display: flex;
+    height: 25vh;
+    width: 80%;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: black;
+    color: gold;
+    box-shadow: 2px 5px 7px 10px gray;
+    justify-content: center;
+    align-items: center;
+}
+
+#lab {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#alarm {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 5vh;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 5px;
+    margin: 15px auto;
+    cursor: pointer;
+}
+
+#alarm::placeholder {
+    color: black;
+    font-size: 16px;
+    opacity: 0.5;
+    padding: 5px;
+}
+
+#alarm:focus {
+    outline: none;
+    border: none;
+    padding: 5px;
+}
+
+#set {
+    background-color: gold;
+    color: black;
+    border: none;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 40%;
+    height: 20%;
+    cursor: pointer;
+}
+
+#alarmtimeremaning {
+    font-size: 18px;
+    color: red;
+    background-color: gray;
+}
+
+@media (max-width: 768px) {
+    .time {
+        width: 90%;
+    }
+
+    #lab {
+        flex-direction: column;
+    }
+
+    #alarm {
+        font-size: 18px;
+        margin: 15px auto;
+    }
+
+    #alarm::placeholder {
+        font-size: 14px;
+    }
+
+    #set {
+        font-size: 16px;
+        width: 40%;
+        height: 16%;
+    }
+
+    #alarmtimeremaning {
+        font-size: 16px;
+    }
+}
